@@ -1,0 +1,305 @@
+body{
+    /* font-family: 'Lobster', cursive; */
+    background: rgba(236, 218, 236, 0.637);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* overflow-x: hidden; */
+  }
+  .nav-link {
+      display: block;
+      /* padding: .5rem 1rem; */
+  }
+  a.nav-item.nav-link.active{
+    padding: 0;
+}
+a.nav-item.nav-link{
+    padding: 0;
+}
+.btn-srch{
+    background-color: transparent;
+    border: none;
+    /* border: 3px solid yellow; */
+    width: 40px;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 50%;
+    /* align-items: flex-end; */
+    color: #d09be2;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.btn-srch:hover {
+    color: rgba(226, 146, 226, 0.637);
+   
+  }
+.navbar img{
+    width: 150px;
+}
+.navbar ul{
+    width: 800px;
+    text-align: center;
+    /* margin: 0 auto; */
+    /* border: 1px solid black; */
+}
+.navbar ul li{
+    /* border: 1px solid black; */
+    margin: 5px;
+    
+}
+
+.nav-icon{
+    margin-left: 100px; 
+    /* border: 1px solid black; */
+}
+.navbar-brand{
+    
+    /* border: 1px solid black; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav.navbar.navbar-expand-lg.navbar-light{
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: background .2s;
+}
+.offset-button{
+  border: 0;
+  outline: none;
+  /* border: 1px solid black; */
+  color: white;
+  /* font-size: 25px; */
+  margin-bottom: -15px;
+  text-align: center;
+  background-color: transparent;
+}
+nav.scrolled{
+    background-color: rgb(231, 199, 231);
+}
+.offset-button .label {
+  font-family: Arial, Helvetica, sans-serif;
+
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.offset-button:hover .hover-mask {
+  -webkit-transform: translateX(0) skew(-10deg);
+  transform: translateX(0) skew(-10deg);
+}
+.hover-mask {
+  background-color: #db42f0;
+}
+.hover-mask {
+    padding: 5px 2px;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  left: -5%;
+  z-index: 1;
+  -webkit-transform: translateX(-100%) skew(-10deg);
+  transform: translateX(-100%) skew(-10deg);
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+}
+
+.offset-button:hover .hover-label {
+  color: #ece8e1;
+}
+.hover-label {
+  position: relative;
+  /* display: block; */
+  /* padding:  2rem; */
+  z-index: 1;
+}
+.offset-button .label:after, .offset-button .label:before {
+  background-color: #0f1923;
+}
+.banner{
+    background-image: url('./assets/pngtree-hand-drawn-cute-blue-baby-toy-background-image_443156.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 630px;
+    width: 100%;
+    color: white;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ab-para{
+    /* border: 1px solid black; */
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    /* width: 800px; */
+    margin: 0 auto;
+    
+}
+.ab-para h1{
+    font-size: 45px;
+    margin-top: 50px;
+}
+.ab-para h3{
+    font-size: 18px;
+}
+.ab-para h1, h3 {
+    font-family:'Times New Roman', Times, serif ;
+}
+
+@media screen and (max-width: 800px){
+    .navbar{
+        width: 729px;
+    }
+    .navbar ul{
+        width: 300px;
+    }
+}
+ @media screen and (max-width: 700px){
+     .navbar{
+         width: 709px;
+     }
+     .navbar ul{
+         width: 300px;
+     }
+ }
+ @media screen and (max-width: 750px){
+    .navbar{
+        width: 509px;
+    }
+    .navbar ul{
+        width: 300px;
+    }
+}
+
+ @media screen and (max-width: 600px){
+    .navbar{
+        width: 509px;
+    }
+    .navbar ul{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 650px){
+    .navbar{
+        width: 509px;
+    }
+    .navbar ul{
+        width: 200px;
+    }
+}  
+@media screen and (max-width: 550px){
+    .navbar{
+        width: 509px;
+    }
+    .navbar ul{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 500px){
+    .navbar{
+        width: 400px;
+    }
+    .navbar ul{
+        width: 200px;
+    }
+}  
+@media screen and (max-width: 400px){
+    .navbar{
+        width: 329px;
+    }
+    .navbar ul{
+        width: 100px;
+    }
+    
+
+}
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color:  #d09be2;;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background:  #d09be2 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}

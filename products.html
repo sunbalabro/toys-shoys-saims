@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./product.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="width:100% !important;">
+        <a class="navbar-brand" href="#"><img src="./logo.png" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class=" nav-link " href="./index.html"><button style="outline: none;" class="offset-button">
+                    <p class="label">
+                        <span class="hover-mask"></span> <span class="hover-label">
+                            Home
+                        </span>
+                    </p>
+                </button></a>
+            </li>
+            <li class="nav-item">
+                <a class=" nav-link " href="./about.html"><button style="outline: none;" class="offset-button">
+                    <p class="label">
+                        <span class="hover-mask"></span> <span class="hover-label">
+                            About Us
+                        </span>
+                    </p>
+                </button></a>
+            </li>
+            <li class="nav-item">
+                <a class=" nav-link " href="./contact.html"><button style="outline: none;" class="offset-button">
+                    <p class="label">
+                        <span class="hover-mask"></span> <span class="hover-label">
+                            Contact Us
+                        </span>
+                    </p>
+                </button></a>
+            </li>
+            <li class="nav-item">
+                <a class=" nav-link " href="./products.html"><button style="outline: none;" class="offset-button">
+                    <p class="label">
+                        <span class="hover-mask"></span> <span class="hover-label">
+                            Products
+                        </span>
+                    </p>
+                </button></a>
+            </li>
+           
+          </ul>
+          <div class="nav-icon" style="display: flex;">
+            <a class=" nav-item nav-link" href="#" id="scrl-itm">
+                
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    class="btn-srch"><i class="fa fa-search"></i></button>
+
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content w3-animate-zoom w3-card-4"
+                        style="background-color: transparent;border: none;width: 550px;font-family: 'Lobster', cursive;">
+                        <header class="w3-container" style="background-color: transparent;">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                class="w3-button w3-display-topright"
+                                style="font-size: 40px;">&times;</span>
+                            <h2 style="font-family: 'Lobster', cursive;">Search here</h2>
+                        </header>
+                        <div class="w3-container">
+                            <input type="text"
+                                style="width: 500px;font-size: 25px;border:none;outline: none;background-color: transparent;border-bottom: 3px solid black;">
+                        </div>
+                    </div>
+                </div>
+            </a>
+        
+            <a href="#" class="nav-item nav-link btn-srch">
+                <button class="btn-srch">
+                    <i class="fa fa-user"></i>
+                </button>
+                
+            </a>
+        
+            <a href="#" class="nav-item nav-link btn-srch">
+                <button class="btn-srch">
+                    <i class="fa fa-heart"></i>
+                </button>
+                
+            </a>
+          </div>
+            
+        
+        </div>
+      </nav>
+      <div class="banner">
+       <h1>Products</h1>
+      </div>
+      <h1 class="prh">Our Products</h1>
+      <div class="row" style="width: 100%;">
+          <div class="card" class="col">
+              <div class="image">
+                <img src="./assets/products/rocking chair with safety belt.PNG"/>
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Rocking chair<br><span>With safety belt</span></h1>
+                  <p>Price : 1500 Rs</p>
+                 <button>Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" class="col">
+                <div class="image">
+                  <img src="./assets/products/nguyen-bui-Zx97aKIDnv4-unsplash.jpg"/>
+                </div>
+                <div class="details">
+                  <div class="center">
+                    <h1>Avengers<br><span>Captain America toy</span></h1>
+                    <p>Price : 500 Rs</p>
+                <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card" class="col">
+                <div class="image">
+                  <img src="./assets/products/philco minion tricycle.PNG" height="400px"/>
+                </div>
+                <div class="details">
+                  <div class="center">
+                    <h1>Minion Tricycle<br><span>Dummy toy</span></h1>
+                    <p>Price : 1200 Rs</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card" class="col">
+                <div class="image">
+                  <img src="./assets/products/pop-zee key chain.PNG"/>
+                </div>
+                <div class="details">
+                  <div class="center">
+                    <h1>Pop Zee<br><span>Key Chain (Special Offer for Kids)</span></h1>
+                    <p>Price : 1000 Rs</p>
+                   <button>Add to cart</button> 
+                  </div>
+                </div>
+              </div>
+            <div class="card" class="col">
+              <div class="image">
+                <img src="./assets/products/tools trolly.PNG"/>
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Tools Trolly<br><span>Best quality plastic wheels</span></h1>
+                  <p>Price : 1200 Rs</p>
+                  <button>Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" class="col">
+              <div class="image">
+                <img src="./assets/products/michael-fousert-Kv2hu25Rx2s-unsplash.jpg" height="400px"/>
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Recycle Truck<br><span>Mini Dummy  toy for kids</span></h1>
+                  <p>Price : 1600 Rs</p>
+                <button>Add to cart </button>
+                </div>
+              </div>
+            </div>
+            <div class="card" class="col">
+              <div class="image">
+                <img src="./assets/products/jose-betancourt-NHIP7M3EB9w-unsplash.jpg" height="100%"/>
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Astronout Man<br><span>Dummy Toy</span></h1>
+                  <p>Price : 1400 Rs</p>
+                <button>Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" class="col">
+              <div class="image">
+                <img src="./assets/products/andrew-reshetov-XzEqlPQsLdI-unsplash.jpg" height="100%" />
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Batman Gagdet Car<br><span>Toy Car</span></h1>
+                  <p>Price : 1300 Rs</p>
+                  <button>Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" class="col">
+              <div class="image">
+                <img src="./assets/products/alison-wang-mou0S7ViElQ-unsplash.jpg" height="100%"/>
+              </div>
+              <div class="details">
+                <div class="center">
+                  <h1>Minion <br><span>Mini Dummy Toy For Kids</span></h1>
+                  <p>Price : 1400 Rs</p>
+                <button>Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" class="col">
+                <div class="image">
+                  <img src="./assets/products/wiggle car.PNG" height="100%"/>
+                </div>
+                <div class="details">
+                  <div class="center">
+                    <h1>Wiggle Car<br><span>New Kids Ride Special Offer</span></h1>
+                    <p>Price : 1500 Rs</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card" class="col">
+                <div class="image">
+                  <img src="./assets/products/kids cartoon car sofa.PNG" height="100%"/>
+                </div>
+                <div class="details">
+                  <div class="center">
+                    <h1>Cartoon Car<br><span>Kids Sofa Car With multiple colurs</span></h1>
+                    <p>Price : 1400 Rs</p>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card" class="col">
+                <div class="image">
+                  <img src="./assets/products/megna tiles clear colours.PNG" height="100%"/>
+                </div>
+                <div class="details">
+                  <div class="center">
+                    <h1>Mega Tiles<br><span>Clear Colours (All colours are available)</span></h1>
+                    <p>Price : 1200 Rs</p>
+                <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+<section id="footer">
+    <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="./index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="./about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="./contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                    <li><a href="./products.html"><i class="fa fa-angle-double-right"></i>Product</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="./index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="./about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="./contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                    <li><a href="./products.html"><i class="fa fa-angle-double-right"></i>Product</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>Quick links</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="./index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="./about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="./contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+                    <li><a href="./products.html"><i class="fa fa-angle-double-right"></i>Product</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <hr>
+        </div>	
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                <p class="h6">© All right Reversed.<a class="text-green ml-2" href="#">Toys Shoys</a></p>
+            </div>
+            <hr>
+        </div>	
+    </div>
+</section>
+</body>
+<script src="./app.js"></script>
+</html>
